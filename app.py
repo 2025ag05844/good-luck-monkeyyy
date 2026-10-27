@@ -7,26 +7,35 @@ st.set_page_config(
     layout="centered"
 )
 
-# Custom CSS for styling
+# Custom CSS to fix text colors and make the card look great in dark/light mode
 st.markdown("""
     <style>
     .main-title {
         font-size: 2.8rem;
-        color: #1E3A8A;
+        color: #38BDF8;
         text-align: center;
         font-weight: bold;
     }
     .sub-title {
         font-size: 1.5rem;
-        color: #4B5563;
+        color: #9CA3AF;
         text-align: center;
     }
     .card {
-        background-color: #F3F4F6;
-        padding: 20px;
-        border-radius: 10px;
+        background-color: #1E293B;
+        padding: 25px;
+        border-radius: 12px;
         text-align: center;
         margin-top: 20px;
+        border: 1px solid #334155;
+    }
+    .card h3 {
+        color: #F8FAFC;
+        margin-bottom: 10px;
+    }
+    .card p {
+        color: #CBD5E1;
+        font-size: 1.1rem;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -40,7 +49,7 @@ st.markdown('<p class="sub-title">Go crush that interview tomorrow!</p>', unsafe
 
 st.write("---")
 
-# Fun motivational quote / message section
+# Fun motivational quote / message section with high-contrast text
 st.markdown("""
 <div class="card">
     <h3>You've got this! 💪</h3>
